@@ -31,11 +31,6 @@ class Graph
         EAST
     }
 
-    private double clamp(double val, double min, double max)
-    {
-        return Math.max(min, Math.min(max, val));
-    }
-
     private void drawPointedTriangle( double x, double y, int triangleSize, Facing facing )
     {
         var context = canvas.getGraphicsContext2D();
