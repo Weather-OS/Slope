@@ -26,7 +26,7 @@ public class SlopeBox
     public SlopeBox( Group group )
     {
         var slopeField = new TextField();
-        var label = new Label( "Calculate Slop At:" );
+        var label = new Label( "Calculate Slope At:" );
         var submitButton = new Button( "Draw Slope" );
         var orangeButton = new RadioButton( "Orange" );
         var purpleButton = new RadioButton( "Purple" );
