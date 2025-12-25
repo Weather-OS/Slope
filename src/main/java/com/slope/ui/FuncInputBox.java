@@ -32,7 +32,7 @@ public class FuncInputBox
     public FuncInputBox( Group group )
     {
         var inputField = new TextField();
-        var label = new Label( " Symja Expression:" );
+        var label = new Label( " SymJa Expression:" );
         var submitButton = new Button( "Plot" );
         var redButton = new RadioButton( "Red" );
         var greenButton = new RadioButton( "Green" );
@@ -77,6 +77,8 @@ public class FuncInputBox
 
             group.getChildren().set( 1, funcPlot.canvas );
             group.getChildren().set( 2, newSlope.canvas );
+
+            OpacityBox.updateOpacities( group );
         } );
 
         layout = new HBox( 10, label, inputField, submitButton, redButton, greenButton, blueButton, blackButton );

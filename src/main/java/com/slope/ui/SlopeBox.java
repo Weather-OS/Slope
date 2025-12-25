@@ -68,6 +68,8 @@ public class SlopeBox
             plotter = new Plotter( lastSlope, currentColor );
             plotter.collisionDot( lastSlopeAt, FuncInputBox.lastFunc.applyAsDouble( lastSlopeAt ) );
             group.getChildren().set( 2, plotter.canvas );
+
+            OpacityBox.updateOpacities( group );
         });
 
         layout = new HBox( 10, label, slopeField, submitButton, orangeButton, purpleButton );

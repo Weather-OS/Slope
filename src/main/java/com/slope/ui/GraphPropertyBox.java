@@ -57,6 +57,8 @@ public class GraphPropertyBox
             group.getChildren().set( 0, graph.canvas );
             group.getChildren().set( 1, plotter.canvas );
             group.getChildren().set( 2, slope.canvas );
+
+            OpacityBox.updateOpacities( group );
         });
 
         layout = new HBox( 10, label, boundariesField, submitButton );

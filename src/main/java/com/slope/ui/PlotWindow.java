@@ -44,10 +44,12 @@ public final class PlotWindow extends Application
         var funcInput = new FuncInputBox( group );
         var graphProperty = new GraphPropertyBox( group );
         var slope = new SlopeBox( group );
+        var opacity = new OpacityBox( group );
         root.getChildren().add( group );
         root.getChildren().add( graphProperty.layout );
         root.getChildren().add( funcInput.layout );
         root.getChildren().add( slope.layout );
+        root.getChildren().add( opacity.layout );
 
         stage.setTitle( name );
         stage.setScene( scene );
