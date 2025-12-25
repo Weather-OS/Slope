@@ -47,6 +47,7 @@ public class Plotter
 
         drawCenteredText( toScreenX( atX ), (canvas.getHeight() / 2) + 20, String.format("%.3f", atX ) );
         drawCenteredText( (canvas.getWidth() / 2) - 20, toScreenY( atY ) + 12, String.format("%.3f", atY ) );
+        context.setStroke( prevColor );
     }
 
     public Plotter( DoubleUnaryOperator function, Color color )
