@@ -53,6 +53,7 @@ public class GraphPropertyBox
             plotter = new Plotter( FuncInputBox.lastFunc, FuncInputBox.currentColor );
             graph = new Graph( Plotter.graphSize, newBoundaries );
             slope = new Plotter( SlopeBox.lastSlope, SlopeBox.currentColor );
+            slope.collisionDot( SlopeBox.lastSlopeAt, FuncInputBox.lastFunc.applyAsDouble( SlopeBox.lastSlopeAt ) );
             group.getChildren().set( 0, graph.canvas );
             group.getChildren().set( 1, plotter.canvas );
             group.getChildren().set( 2, slope.canvas );

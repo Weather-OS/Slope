@@ -31,6 +31,7 @@ public final class PlotWindow extends Application
 
         var funcPlot = new Plotter( FuncInputBox.lastFunc, FuncInputBox.currentColor );
         var slopePlot = new Plotter( SlopeBox.lastSlope, SlopeBox.currentColor );
+        slopePlot.collisionDot( 2, 4 );
 
         var root = new VBox( 10 );
         var group = new Group();

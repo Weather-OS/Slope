@@ -73,6 +73,7 @@ public class FuncInputBox
             var funcPlot = new Plotter( lastFunc, currentColor );
             SlopeBox.lastSlope = ExprDiffFunc.slopeFunc( lastFuncString, SlopeBox.lastSlopeAt );
             newSlope = new Plotter( SlopeBox.lastSlope, SlopeBox.currentColor );
+            newSlope.collisionDot( SlopeBox.lastSlopeAt, FuncInputBox.lastFunc.applyAsDouble( SlopeBox.lastSlopeAt ) );
 
             group.getChildren().set( 1, funcPlot.canvas );
             group.getChildren().set( 2, newSlope.canvas );

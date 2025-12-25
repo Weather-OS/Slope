@@ -66,6 +66,7 @@ public class SlopeBox
 
             lastSlope = ExprDiffFunc.slopeFunc( FuncInputBox.lastFuncString, lastSlopeAt );
             plotter = new Plotter( lastSlope, currentColor );
+            plotter.collisionDot( lastSlopeAt, FuncInputBox.lastFunc.applyAsDouble( lastSlopeAt ) );
             group.getChildren().set( 2, plotter.canvas );
         });
 

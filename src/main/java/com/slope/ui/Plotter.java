@@ -20,6 +20,15 @@ public class Plotter
         return canvas.getHeight() - ( (y + boundary) / (2.0 * boundary) ) * canvas.getHeight();
     }
 
+    public void collisionDot( double atX, double atY )
+    {
+        var context = canvas.getGraphicsContext2D();
+
+        // Drawing a circle starts at it's most corner position.
+        // So we have to remove 2.5 from each axis.
+        context.fillOval( toScreenX( atX ) - 2.5, toScreenY( atY ) - 2.5, 5, 5 );
+    }
+
     public Plotter( DoubleUnaryOperator function, Color color )
     {
         canvas = new Canvas( graphSize, graphSize );
