@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2025 Weather. All Rights Reserved.
+ *
+ * This code is for educational purposes only.
+ * Unauthorized copying, distribution, or modification is prohibited.
+ */
+
 package com.slope.ui;
 
 import javafx.scene.canvas.*;
